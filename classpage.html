@@ -1,0 +1,104 @@
+<html>
+  <head> </head>
+  <body>
+    <li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img  m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" data-dropdown-toggle="click">
+      <a href="#" class="m-nav__link m-dropdown__toggle">
+        <span class="m-topbar__userpic">
+          <img src="<?php echo $this->usr->get_userImage($_SESSION['system_user_id'])?>" class="m--img-rounded m--marginless m--img-centered" alt=""/>
+        </span>
+        <span class="m-topbar__username m--hide">
+          <?php echo $this->usr->get_userName($_SESSION['system_user_id'])?>
+        </span>
+      </a>
+      <div class="m-dropdown__wrapper">
+        <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+        <div class="m-dropdown__inner">
+          <div class="m-dropdown__header m--align-center" style="background: url(/assets/app/media/img/misc/user_profile_bg-red.jpg); background-size: cover;">
+            <div class="m-card-user m-card-user--skin-dark">
+              <div class="m-card-user__pic">
+                <img src="<?php echo $this->usr->get_userImage($_SESSION['system_user_id'])?>" class="m--img-rounded m--marginless" alt=""/>
+              </div>
+              <div class="m-card-user__details">
+                <span class="m-card-user__name m--font-weight-500">
+                  <?php echo $this->usr->get_userFullName($_SESSION['system_user_id'])?>
+                </span>
+                <a href="/myconfig" class="m-card-user__email m--font-weight-300 m-link">
+                  <?php echo $this->usr->get_userEmail($_SESSION['system_user_id'])?>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="m-dropdown__body">
+            <div class="m-dropdown__content">
+              <ul class="m-nav m-nav--skin-light">
+                <li class="m-nav__section m--hide">
+                  <span class="m-nav__section-text">
+                    Section
+                  </span>
+                </li>
+                <li class="m-nav__item">
+                  <a href="/myconfig" class="m-nav__link">
+                    <i class="m-nav__link-icon flaticon-profile-1"></i>
+                    <span class="m-nav__link-title">
+                      <span class="m-nav__link-wrap">
+                        <span class="m-nav__link-text">
+                          My Profile
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li class="m-nav__item">
+                  <a href="/mkg-templates" class="m-nav__link">
+                    <i class="m-nav__link-icon flaticon-file-1"></i>
+                    <span class="m-nav__link-text">
+                      My eMail Templates
+                    </span>
+                  </a>
+                </li>
+                <li class="m-nav__item">
+                  <a href="/api-connections" class="m-nav__link">
+                    <i class="m-nav__link-icon flaticon-map"></i>
+                    <span class="m-nav__link-text">
+                      API Connections
+                    </span>
+                  </a>
+                </li>
+                <li class="m-nav__item">
+                  <a href="/api-connections" class="m-nav__link">
+                    <i class="m-nav__link-icon flaticon-map"></i>
+                    <span class="m-nav__link-text">
+                      API Connections
+                    </span>
+                  </a>
+                </li>
+                <li class="m-nav__separator m-nav__separator--fit"></li>
+                <!--
+                <li class="m-nav__item">
+                  <a href="header/profile.html" class="m-nav__link">
+                    <i class="m-nav__link-icon flaticon-info"></i>
+                    <span class="m-nav__link-text">
+                      FAQ
+                    </span>
+                  </a>
+                </li>
+                -->
+                <li class="m-nav__separator m-nav__separator--fit"></li>
+                <li class="m-nav__item">
+                  <a href="/signout.php" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
+                    Logout
+                  </a>
+                </li>
+                <li class="m-nav__item">
+                  <a href="/securelogout.php" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
+                    New Secure Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </body>
+</html>

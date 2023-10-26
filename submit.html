@@ -1,0 +1,52 @@
+<html>
+
+<body>
+
+    <main class="main">
+
+        <h4 id="start-your-search-today" class="has-text-align-center">Start Your Search
+            Today</h4> <iframe loading="lazy" name="KIMSForm-ID" frameborder="0" width="100%" height="1300"
+            src="https://kiadmin.bitnamiapp.com/view-form.php?id=525428e68e1b935745900a5eda399ae7"
+            data-ll-status="loaded"></iframe>
+
+
+
+        <script type="text/javascript">
+            (function (window) {
+
+                addEvent(window, 'message', function (message) {
+                    try {
+                        var data = JSON.parse(message.data);
+                        console.log('Data From Iframe:');
+			    console.log(data);
+			    var dataLayer = window.dataLayer || (window.dataLayer = []);
+                        if (data.event) {
+                            dataLayer.push({
+                                'event': data.event,
+                                'postMessageData': data
+                            });
+                        }
+                    } catch (e) {}
+                });
+
+                // Cross-browser event listener
+                function addEvent(el, evt, fn) {
+                    if (el.addEventListener) {
+                        el.addEventListener(evt, fn);
+                    } else if (el.attachEvent) {
+                        el.attachEvent('on' + evt, function (evt) {
+                            fn.call(el, evt);
+                        });
+                    } else if (typeof el['on' + evt] === 'undefined' || el['on' + evt] === null) {
+                        el['on' + evt] = function (evt) {
+                            fn.call(el, evt);
+                        };
+                    }
+                }
+
+            })(window);
+        </script>
+
+</body>
+
+</html>

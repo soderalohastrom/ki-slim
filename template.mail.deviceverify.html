@@ -1,0 +1,33 @@
+<table width="650" border="0" align="center" cellpadding="10" cellspacing="0">
+  <tr>
+    <td>
+    	<span style="font-family:Arial, Helvetica, sans-serif; font-size:18px;">
+        KISS System - Device Authentication
+        </span>
+    </td>
+  </tr>
+  <tr>
+    <td height="100" valign="bottom" bgcolor="#990000"><span style="font-family:Arial, Helvetica, sans-serif; font-size:20px; color:#FFF;">KISS Verification Code</span></td>
+  </tr>
+  <tr>
+    <td>
+    <p style="font-family:Arial, Helvetica, sans-serif;">Dear KISS User,</p>
+    <p style="font-family:Arial, Helvetica, sans-serif;">We received a request to access your KISS Account <span dir="ltr"><strong>{{USERNAME}}</strong></span> via a new device:<br />
+      <br />
+      {{DEVICE_TYPE}}<br />
+      {{IP_ADDRESS}}<br />      
+      {{REVERSE_IP_LOOKUP}}<br />
+      {{REQUEST_TIME}}
+    </p>
+    <p style="font-family:Arial, Helvetica, sans-serif;"> Your KISS verification code is:</p>
+      <div>
+        <p style="font-family:Arial, Helvetica, sans-serif; font-size:36px; text-align:center;"><strong>{{VERIFICATION_CODE}}</strong></p>
+      </div>
+    <p style="font-family:Arial, Helvetica, sans-serif;">If you did not request this code, it is possible that someone else is trying to access the KISS Account <strong>{{USERNAME}}</strong>. <strong>Do not forward or give this code to anyone. </strong>You received this message because this email address is connected to the account attempting to login.    </p>
+    <p style="font-family:Arial, Helvetica, sans-serif;">Sincerely yours,<br />
+    KISS System</p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>

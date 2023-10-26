@@ -1,0 +1,14 @@
+{
+    "require": {
+        "willdurand/email-reply-parser": "^2.9",
+        "kriswallsmith/buzz": "^1.2",
+        "nyholm/psr7": "^1.4",
+        "auth0/auth0-php": "^8.0",
+        "vlucas/phpdotenv": "^5.4",
+        "steampixel/simple-php-router": "^0.7.0",
+        "sendgrid/sendgrid": "^7.11",
+        "lanlin/nylas-php": "^4.2",
+        "phpseclib/mcrypt_compat": "^2.0",
+        "greenlion/php-sql-parser": "^4.5"
+    }
+}

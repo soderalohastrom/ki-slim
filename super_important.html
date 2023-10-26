@@ -1,0 +1,303 @@
+SUPER IMPORTANT
+
+<style>
+	
+  html, body {
+    height: 100%;	  
+    background-color: #ecedf3;
+    font-family: 'Poppins', sans-serif; 
+  }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Adjust this property */
+  align-items: center;
+  text-align: center;
+  margin: 20px 50px 20px 50px;  /* Adjust this property */
+  background-color: white; /* Moved from media query */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+  .quote-box {
+    width: 380px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444444;
+	border-radius: 10px;  
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: <?php
+      $colors = ['#FFD1DC', '#A2CFFE', '#B5A9D4', '#FFFBA1', '#FFABAB', '#A1FFD5', '#CEA2FD', '#FFDAC1', '#FFAAA5', '#EEEEEE'];
+      echo $colors[array_rand($colors)];
+    ?>;
+  }
+	
+  .quote {
+    margin-top: 30px;
+	margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .author {
+    font-weight: light;
+    font-size: 12px;      
+  }
+
+  .dashboard-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #4d5064;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .kiss {
+    font-size: 45px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .input-label {
+    font-size: 14px;
+  }
+
+  .input-field {
+    width: 320px;
+    height: 38px;
+	margin-top: 10px;
+    font-size: 18px;
+	border-radius: 2px;
+    text-align: center;
+  }
+
+  .submit-button {
+    width: 160px;
+    height: 40px;
+	margin-left: 15px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #4d5064;      
+  }
+	
+.radar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin: 0px 50px 50px 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.genderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;  /* Modify this */
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .genderContainer {
+    flex-direction: row;
+	align-items: flex-start; 
+  }
+}
+
+.menContainer, .womenContainer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.menContainer {
+    background-color: #F1F8FF;
+    margin-right: 10px; 	
+}
+
+.womenContainer {
+    background-color: #FFF1F2;
+    margin-left: 10px; 	
+}
+
+.menContainer table, .womenContainer table {
+    margin-left: auto;
+    margin-right: auto;
+}
+	
+.menTable td, .menTable th  {
+    padding: 5px;
+    border-spacing: 5px;
+    border: 1px solid #fff;
+}
+
+.womenTable td, .womenTable th  {
+    padding: 5px;
+    border-spacing: 5px;
+    border: 1px solid #fff;
+}
+
+.menTable, .womenTable {
+    margin-top: 10px; /* Adjust to your liking */
+    margin-bottom: 10px; /* Adjust to your liking */
+}
+
+.menContainer table a, .womenContainer table a {
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    text-decoration: none;
+    color: #666;
+}
+	
+.menContainer table input[type="text"], .womenContainer table input[type="text"] {
+    width: 80%;  /* Adjust this value as needed */
+}
+
+	
+@media only screen and (max-width: 992px) {
+
+  /* Media Query for Mobile */
+  @media only screen and (max-width: 992px) {
+    .quote-box {
+      /* display: none; */
+    }
+
+    .center {
+      margin: 0;
+      height: 100%;
+      background-color: white;  /* Add this */		
+    }
+    .radar {
+      margin: 0;
+      height: 100%;
+    }
+    body {
+      background-color: white;
+    }
+  }
+	@media (max-width: 768px) {
+	  .menContainer {
+		margin-right: 0;
+	  }
+
+	  .womenContainer {
+		margin-left: 0;
+	  }
+	}
+
+</style>
+
+<script>
+  WebFont.load({
+    google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
+    active: function() {
+        sessionStorage.fonts = true;
+    }
+  });
+
+
+  
+  window.onload = function() {
+    // Display the contents of the "menlinks" and "womenlinks" cookies
+    // Uncomment the lines below to display the cookies
+	//     alert(decodeURIComponent(document.cookie.replace(/(?:(?:^|.*;\s*)menlinks\s*=\s*([^;]*).*$)|^.*$/, "$1")));
+    // alert(decodeURIComponent(document.cookie.replace(/(?:(?:^|.*;\s*)womenlinks\s*=\s*([^;]*).*$)|^.*$/, "$1")));
+  }	
+	
+	
+</script>	
+
+function goToProfile() {
+    var id = document.getElementById('id').value;
+    if (id && id.length === 6 && !isNaN(id)) {
+        var a = document.createElement('a');
+        a.href = 'https://kiss.kelleher-international.com/profile/' + id;
+        a.target = '_blank';
+        a.click(); 
+    } else {
+      alert('Please enter a valid 6 digit number.');
+    }
+  }
+
+
+<div class="center">
+<br><br>
+	
+	  <div class="quote-box">
+		<?php
+		$curl = curl_init();
+		curl_setopt_array($curl, array(
+		  CURLOPT_URL => "https://famous-quotes4.p.rapidapi.com/random?category=love&count=1",
+		  CURLOPT_RETURNTRANSFER => true,
+		  CURLOPT_ENCODING => "",
+		  CURLOPT_MAXREDIRS => 10,
+		  CURLOPT_TIMEOUT => 30,
+		  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+		  CURLOPT_CUSTOMREQUEST => "GET",
+		  CURLOPT_HTTPHEADER => array(
+			"X-RapidAPI-Host: famous-quotes4.p.rapidapi.com",
+			"X-RapidAPI-Key: f074265aa0msh4f16e25bd6b9c81p1db692jsn254873bbbcd3"
+		  )
+		));
+		$response = curl_exec($curl);
+		$err = curl_error($curl);
+		curl_close($curl);
+		if ($err) {
+		  echo 'Curl error: ' . $err;
+		} else {
+		  $data = json_decode($response, true); // convert response to array
+		  // Display the first quote and its author
+		  $quote = $data[0];
+		  echo "<p class='quote'>" . htmlspecialchars($quote['text']) . "</p>";
+		  echo "<p class='author'>" . htmlspecialchars($quote['author']) . "</p>";
+		}
+		?>
+	  </div>
+
+	  <br><br>
+	  <span style="font-size: 18px;">
+		Enter the <strong>ID#</strong> of the profile you want to view:
+		<div style="text-align: center; margin-top: 10px;">
+		  <form onsubmit="event.preventDefault(); goToProfile();">
+			<label for="id" class="input-label"></label>
+			<input type="text" id="id" name="id" required placeholder="6 digits" class="input-field" maxlength="6" style="width: 80px;">
+			<input type="submit" value="Go to Profile" class="submit-button">
+		  </form>
+		</div><br><br>
+	  </span>
+	</div>
+
+  $('.clearForm').submit(function(e) {
+    e.preventDefault();
+
+    // Get the form and gender
+    var form = $(this);
+    var gender = form.data('gender');
+
+    // Clear the links
+    $('#' + gender + 'Container').empty();
+
+    // Clear the cookie
+    clearCookie(gender);
+
+    // Show success message
+    alert('Links cleared successfully.');
+  });
+});
