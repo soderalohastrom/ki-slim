@@ -9,10 +9,10 @@ error_reporting(E_ALL); ini_set('display_errors', '0');
 class database {
 	
 	function __construct() {
-		$this->host    =    'database-kelleher-1.c2tehdln7ywp.us-west-1.rds.amazonaws.com';        /** $this->host    = host database host url or domain */
-        $this->username    =    'application_kelleher_user';            /** $this->username    = username username for the database */
-        $this->password    =    'zxgS*f1WYA4v';        /** $this->password    = password password fir read-write database access */
-        $this->database    =    'application_kelleher';            /** $this->database    = database namke of the database connecting */
+		$this->host    =    '';        /** $this->host    = host database host url or domain */
+        $this->username    =    '';            /** $this->username    = username username for the database */
+        $this->password    =    '';        /** $this->password    = password password fir read-write database access */
+        $this->database    =    '';            /** $this->database    = database namke of the database connecting */
 	}
 	
 	
